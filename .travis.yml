@@ -1,0 +1,39 @@
+language: php
+
+cache:
+    directories:
+        - $HOME/.composer/cache
+
+php:
+    - '5.6'
+    - '7.0'
+    - '7.1'
+    - nightly
+
+matrix:
+    fast_finish: true
+    include:
+        - php: '5.6'
+          env:
+              - COMPOSER_FLAGS='--prefer-lowest'
+              - SYMFONY_VERSION='~2.7.0'
+        - php: '5.6'
+          env:
+              - COMPOSER_FLAGS='--prefer-lowest'
+              - SYMFONY_VERSION='~3.0.0'
+    allow_failures:
+        - php: nightly
+
+install:
+    - phpenv config-rm xdebug.ini || true
+    - |
+      if [ -n "$SYMFONY_VERSION" ]; then
+          composer require --dev --no-update symfony/symfony "symfony/symfony:${SYMFONY_VERSION}"
+      fi
+    - composer update --prefer-dist $COMPOSER_FLAGS
+
+script:
+    - bin/phpunit
+
+notifications:
+    email: false

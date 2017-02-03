@@ -1,0 +1,8 @@
+vendor
+composer.lock
+tests/Functional/cache
+tests/Functional/logs
+phpunit.xml
+dist
+bin
+!bin/tests.sh
