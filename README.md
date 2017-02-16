@@ -12,7 +12,7 @@ A dead simple bundle to be able to access to the [Symfony][2] Container statical
 You can use [Composer][1] to install the bundle to your project:
 
 ```bash
-composer require theofidry/sfcontext-bundle
+composer require theofidry/sfcontext-bundle:^1.0@rc
 ```
 
 Then, enable the bundle by updating your `app/AppKernel.php` file to enable the bundle:
@@ -53,5 +53,16 @@ class DummyService
 }
 ```
 
+
+## Credits
+
+I got the original idea from [Laravel facades][3] although the idea is actually
+not new and you can find it in the Symfony world as [sfContext][4] and which
+has been ported in Symfony 2.x with [sfContextBundle][5].
+
+
 [1]: https://getcomposer.org/
 [2]: http://symfony.com/
+[3]: https://laravel.com/docs/5.3/facades
+[4]: http://www.symfony-project.org/api/1_4/sfContext
+[5]: https://github.com/francisbesset/sfContextBundle
