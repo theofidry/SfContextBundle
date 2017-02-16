@@ -23,9 +23,9 @@ Then, enable the bundle by updating your `app/AppKernel.php` file to enable the 
 public function registerBundles()
 {
     $bundles = array(
-		// ...
-		new Fidry\SfContextBundle\SfContextBundle(),
-	);
+        // ...
+        new Fidry\SfContextBundle\SfContextBundle(),
+    );
 
     return $bundles;
 }
@@ -42,14 +42,14 @@ There is two cases where you might use this bundle:
 ```php
 class DummyService
 {
-	public function foo()
-	{
-		// Do something
-		
-		SfContext::get('logger')->debug('it worked);
-		
-		// Do something else
-	}
+    public function foo()
+    {
+        // Do something
+
+        SfContext::get('logger')->debug('it worked');
+
+        // Do something else
+    }
 }
 ```
 
