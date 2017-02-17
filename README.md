@@ -1,6 +1,6 @@
 # SfContextBundle
 
-[![Package version](https://img.shields.io/packagist/vpre/theofidry/SfContextBundle.svg?style=flat-square)](https://packagist.org/packages/theofidry/sfcontext-bundle)
+[![Package version](https://img.shields.io/packagist/vpre/theofidry/sfcontext-bundle.svg?style=flat-square)](https://packagist.org/packages/theofidry/sfcontext-bundle)
 [![Build Status](https://img.shields.io/travis/theofidry/SfContextBundle.svg?branch=master&style=flat-square)](https://travis-ci.org/theofidry/SfContextBundle?branch=master)
 [![License](https://img.shields.io/badge/license-MIT-red.svg?style=flat-square)](LICENSE)
 
