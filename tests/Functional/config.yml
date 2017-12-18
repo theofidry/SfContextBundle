@@ -2,8 +2,7 @@ framework:
     secret: SfContextBundleSecret
     router:
         resource: ~
-        strict_requirements: %kernel.debug%
-    trusted_proxies: ~
+        strict_requirements: '%kernel.debug%'
     test: ~
     session:
         storage_id: session.storage.mock_file

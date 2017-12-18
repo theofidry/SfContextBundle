@@ -12,7 +12,7 @@ A dead simple bundle to be able to access to the [Symfony][2] Container statical
 You can use [Composer][1] to install the bundle to your project:
 
 ```bash
-composer require theofidry/sfcontext-bundle:^1.0@rc
+composer require theofidry/sfcontext-bundle
 ```
 
 Then, enable the bundle by updating your `app/AppKernel.php` file to enable the bundle:
