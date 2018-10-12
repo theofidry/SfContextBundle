@@ -4,12 +4,12 @@
 [![Build Status](https://img.shields.io/travis/theofidry/SfContextBundle.svg?branch=master&style=flat-square)](https://travis-ci.org/theofidry/SfContextBundle?branch=master)
 [![License](https://img.shields.io/badge/license-MIT-red.svg?style=flat-square)](LICENSE)
 
-A dead simple bundle to be able to access to the [Symfony][2] Container statically.
+A dead simple bundle to be able to access the [Symfony][2] Container statically.
 
 
 ## Install
 
-You can use [Composer][1] to install the bundle to your project:
+You can use [Composer][1] to install the bundle in your project:
 
 ```bash
 composer require theofidry/sfcontext-bundle
@@ -34,7 +34,7 @@ public function registerBundles()
 
 ## Usage
 
-There is two cases where you might use this bundle:
+There are two cases where you might use this bundle:
 
 1. If you don't like dependency injection
 2. For quick & dirty debugging where you can't afford to do a dump
@@ -58,7 +58,7 @@ class DummyService
 
 I got the original idea from [Laravel facades][3] although the idea is actually
 not new and you can find it in the Symfony world as [sfContext][4] and which
-has been ported in Symfony 2.x with [sfContextBundle][5].
+has been ported to Symfony 2.x with [sfContextBundle][5].
 
 
 [1]: https://getcomposer.org/
